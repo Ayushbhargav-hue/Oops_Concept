@@ -6,5 +6,6 @@ public class removespacebytrim
 		String s1=sc.nextLine();
 	System.out.println("Orginal String "+s1);	
 	System.out.println(s1.trim()+" String trim");
+        System.out.println(s1.isEmpty());   
 	}
 }
