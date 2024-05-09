@@ -15,11 +15,8 @@ public class JavaStreamDemo {
 		product.add(new A(4,"Samsung S12","12 series","Samsung"));
 		
 		
-		List<Integer>list=product.stream()
-                           .filter(p->p.pid>2)
-                           .map(m->m.pid).
-                           collect(Collectors.toList());
-		System.out.println(list);
+		product.stream().filter(p->p.pid>2).map(m->m.pid).forEach(System.out::println);
+                    
 		
 		             
 		
